@@ -12,6 +12,7 @@ class user_table_prefer(models.Model):
     sortname = models.CharField(max_length=100, verbose_name=u'Поле сортировки')
     sortorder = models.CharField(max_length=100, verbose_name=u'Порядок сортировки')
     colsorder = models.TextField(verbose_name=u'Порядок полей')
+    rowcount = models.IntegerField(verbose_name=u'Записей на страницу')
 
     class Meta:
         verbose_name = u'Пользовательские настройки таблиц'
